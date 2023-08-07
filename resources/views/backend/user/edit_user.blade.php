@@ -22,6 +22,13 @@
         @csrf
 
 <div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Identificador</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" name="identificador" placeholder="Enter your identificador" value="{{$edit->identificador}}">
+    </div>
+</div>
+
+<div class="form-group row">
     <label for="name" class="col-sm-2 col-form-label"> User name</label>
     <div class="col-sm-10">
         <input type="text" class="form-control" name="name" placeholder="Enter your name" value="{{$edit->name}}">
@@ -41,6 +48,38 @@
     <label for="name" class="col-sm-2 col-form-label"> Password</label>
     <div class="col-sm-10">
         <input type="password" class="form-control" name="password" placeholder="Enter pasword" value="{{$edit->password}}">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Numero de celular</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" name="celular" placeholder="Enter your Phone number" value="{{$edit->numero_celular}}">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Cedula</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" name="cedula" placeholder="Enter your identification card" value="{{$edit->cedula}}">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> User birthdate</label>
+    <div class="col-sm-10">
+        <input type="date" class="form-control" name="birthdate" placeholder="Enter your birthdate" value="{{$edit->fecha_de_nacimiento}}">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Código de Ciudad</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="exampleFormControlSelect1" name="CódigoDeCiudad" value="{{$edit->Codigo_de_ciudad}}">
+            <option value="1" {{'Cartagena' == $edit->Codigo_de_ciudad ? 'selected' : ''}}>Cartagena</option>
+            <option value="2" {{'Medellin' == $edit->Codigo_de_ciudad ? 'selected' : ''}}>Medellin</option>
+            <option value="3" {{'Bogota' == $edit->Codigo_de_ciudad ? 'selected' : ''}}>Bogota</option>
+        </select>
     </div>
 </div>
 

@@ -19,9 +19,14 @@
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                   <tr>
-                    <th>Serial</th>
+                    <th>Id</th>
+                    <th>Identificador</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cedula</th>
+                    <th>birthdate</th>
+                    <th>CódigoDeCiudad</th>
                     <th>Role</th>
                     <th>Action</th>
                   </tr>
@@ -31,8 +36,13 @@
                  @foreach($all as $key=>$row)
                    <tr>
                        <td>{{ $key+1 }}</td>
+                       <td>{{ $row->identificador }}</td>
                        <td>{{ $row->name }}</td>
                        <td>{{ $row->email }}</td>
+                       <td>{{ $row->numero_celular }}</td>
+                       <td>{{ $row->cedula }}</td>
+                       <td>{{ $row->fecha_de_nacimiento }}</td>
+                       <td>{{ $row->Codigo_de_ciudad }}</td>
                        <td>{{ $row->role}}</td>
                     
                     </td>
@@ -47,9 +57,14 @@
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Serial</th>
+                    <th>Id</th>
+                    <th>Identificador</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cedula</th>
+                    <th>birthdate</th>
+                    <th>CódigoDeCiudad</th>
                     <th>Role</th>
                     <th>Action</th>
                   </tr>

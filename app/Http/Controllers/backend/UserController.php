@@ -29,8 +29,13 @@ class UserController extends Controller
     public function InsertUser(Request $request)
     {
         $data = array();
+        $data['identificador'] = $request->identificador;
         $data['name'] = $request->name;
         $data['email'] = $request->email;
+        $data['numero_celular'] = $request->celular;
+        $data['cedula'] = $request->cedula;
+        $data['fecha_de_nacimiento'] = $request->birthdate;
+        $data['Codigo_de_ciudad'] = $request->CódigoDeCiudad;
         $data['role'] = $request->role;
         $data['password'] = Hash::make($request->password);
         $data['created_at'] = date('Y-m-d H:i:s');

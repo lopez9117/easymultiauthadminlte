@@ -22,6 +22,13 @@
         @csrf
 
 <div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Identificador</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" name="identificador" placeholder="Enter your identificador" required>
+    </div>
+</div>
+
+<div class="form-group row">
     <label for="name" class="col-sm-2 col-form-label"> User name</label>
     <div class="col-sm-10">
         <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
@@ -36,7 +43,6 @@
 </div>
 
 
-
 <div class="form-group row">
     <label for="name" class="col-sm-2 col-form-label"> Password</label>
     <div class="col-sm-10">
@@ -44,7 +50,37 @@
     </div>
 </div>
 
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Numero de celular</label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" name="celular" placeholder="Enter your Phone number">
+    </div>
+</div>
 
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Cedula</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" name="cedula" placeholder="Enter your identification card" required>
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> User birthdate</label>
+    <div class="col-sm-10">
+        <input type="date" class="form-control" name="birthdate" placeholder="Enter your birthdate" required>
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label"> Código de Ciudad</label>
+    <div class="col-sm-10">
+        <select class="form-control" id="exampleFormControlSelect1" name="CódigoDeCiudad" requeired>
+            <option value="1">Cartagena</option>
+            <option value="2">Medellin</option>
+            <option value="3">Bogota</option>
+        </select>
+    </div>
+</div>
 
 <div class="form-group row">
     <label for="name" class="col-sm-2 col-form-label"> User Role Type</label>
