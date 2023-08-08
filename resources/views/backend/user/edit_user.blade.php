@@ -54,7 +54,7 @@
 <div class="form-group row">
     <label for="name" class="col-sm-2 col-form-label"> Numero de celular</label>
     <div class="col-sm-10">
-        <input type="number" class="form-control" name="celular" placeholder="Enter your Phone number" value="{{$edit->numero_celular}}">
+        <input type="text" class="form-control" name="celular" placeholder="Enter your Phone number" value="{{$edit->numero_celular}}">
     </div>
 </div>
 
